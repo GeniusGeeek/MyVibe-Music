@@ -31,6 +31,7 @@ dependencies:
   flutter_svg : ^0.21.0+1
   adobe_xd: ^2.0.0
   carousel_slider: ^4.0.0
+  font_awesome_flutter: ^9.1.0
 
 dev_dependencies:
   flutter_test:
