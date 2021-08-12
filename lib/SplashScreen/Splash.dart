@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:my_vibe/LandingPage/Home.dart';
+import 'package:my_vibe/MainScreen.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -22,7 +23,7 @@ class _SplashState extends State<Splash> {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => Home(),
+          builder: (context) => MainScreen(),
         ),
       );
     });

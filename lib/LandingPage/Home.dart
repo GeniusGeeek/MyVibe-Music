@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:hexcolor/hexcolor.dart';
 import 'package:my_vibe/Authentication/Login.dart';
 import 'package:my_vibe/Vibes/Vibes.dart';
 
@@ -16,6 +17,7 @@ class _HomeState extends State<Home> {
 
   int _selectedIndex = 0;
 
+
   List<Widget> _widgetOptions = <Widget>[
     Vibes(),
   ];
@@ -28,7 +30,7 @@ class _HomeState extends State<Home> {
               width: 375,
               height: 1450,
               decoration: BoxDecoration(
-                color: Colors.black87,
+                color: HexColor("#707070"),
               ),
               child: Stack(
                 children: <Widget>[
@@ -129,7 +131,7 @@ class _HomeState extends State<Home> {
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => Login()),
+                                          builder: (context) => Vibes()),
                                     );
                                   },
                                   child: Container(
@@ -142,7 +144,7 @@ class _HomeState extends State<Home> {
                                           bottomLeft: Radius.circular(20),
                                           bottomRight: Radius.circular(20),
                                         ),
-                                        color: Colors.lightBlue,
+                                        color: HexColor("#46A99E"),
                                       ),
                                       child: IconButton(
                                         icon: Icon(
@@ -1494,8 +1496,6 @@ class _HomeState extends State<Home> {
               )),
         ),
 
-
-
         //bottom nav
         bottomNavigationBar: Theme(
           data: Theme.of(context).copyWith(
@@ -1513,11 +1513,12 @@ class _HomeState extends State<Home> {
               BottomNavigationBarItem(
                 icon: new Icon(
                   Icons.music_note,
-                  color: Colors.lightBlueAccent,
+                  color: HexColor("#46A99E"),
                 ),
                 title: new Text(
                   'Music',
-                  style: TextStyle(color: Colors.lightBlueAccent),
+                  style: TextStyle(
+                    color: HexColor("#46A99E"),),
                 ),
               ),
               BottomNavigationBarItem(
@@ -1546,6 +1547,7 @@ class _HomeState extends State<Home> {
               });
             },
           ),
+
         ));
   }
 }
