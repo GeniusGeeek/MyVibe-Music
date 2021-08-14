@@ -3,6 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:my_vibe/Authentication/Login.dart';
+import 'package:my_vibe/Pages/Pages.dart';
+import 'package:my_vibe/Playing/Playing.dart';
+import 'package:my_vibe/Playlist/NewPlayList.dart';
+import 'package:my_vibe/Feedback/Feedback.dart';
+import 'package:my_vibe/Profile/Profile.dart';
+import 'package:my_vibe/Subscribe/Subscribe.dart';
 import 'package:my_vibe/Vibes/Vibes.dart';
 
 class Music extends StatefulWidget {
@@ -100,7 +106,7 @@ class _MusicState extends State<Music> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => Login()),
+                          builder: (context) => Pages()),
                     );
                   },
                   child: Padding(
